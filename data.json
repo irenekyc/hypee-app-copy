@@ -1,0 +1,117 @@
+{
+    "appName": "Hypee－photo, video transition‪s",
+    "appLogo": "",
+    "legend": "Edit keyframes, add music",
+    "developer":{
+        "name": "Aleksei Balchunas",
+        "url": "https://apps.apple.com/ru/developer/aleksei-balchunas/id1485510269?l=en"
+        },
+    "rating":{
+        "score": 4.6,
+        "total": 56
+    },
+    "version": "1.15.0",
+    "lastUpdate": "2d ago",
+    "appStoreLink": "",
+    "featureMedia":[
+        {
+            "description":"",
+            "src": ""
+        },
+        {
+            "description":"",
+            "src": ""
+        },
+        {
+            "description":"",
+            "src": ""
+        },
+        {
+            "description":"",
+            "src": ""
+        }
+
+    ],
+    "description":{
+        "excerpt":"Try out the best video editor app with countless possibilities and amazing features like 50+ stunning filters and 120+ stickers, as well as adding music or text to videos and special sound effects! Combine all these and a number of other features and make creative and beautiful videos. \nWhen you take a look at features that Hypee is offering, it will certainly motivate you to edit your videos and make the best out of them!",
+        "features":[
+            "Transitions - 40+ transitions - Variety of shapes and looks for every occasion.",
+            "Visual Effects - 26 VFXs: Glow, Blur, Glitch, VHS, and many more.",
+            "Filters - 50+ stunning filters for your videos.",
+            "Overlays - 30+ overlays (animation or footage). A simple way to start the design of any video!",
+            "Stickers. 120+ stickers: 70+ regular and 50+ neon stickers",
+            "Sound Effects - 200+ sound effects - Make your videos alive!",
+            "Music - Import music from your library or use sound from any other video.",
+            "Re-effect feature - Offers an ability to apply effects AND change the strength of it while the video is playing. This makes it easy to make effects correspond to the beat of the music of the video.",
+            "Sharing - Ability to select and share all edits from any part of your video." ,
+            "Keyframes - Ability to edit keyframes for stickers, texts, and video itself. Mixing with all the effects, it is the perfect toolchain for creating custom effects, transitions, and reusable combinations of any part of Hypee."
+        ],
+        "cta":"If you are planning to create videos of your family and friends, we will help you to produce HQ videos - the same as you imagined it in your head! It has never been easier to create stunning videos - Take your first step!"
+    },
+    "newFeatures":[
+        "Effects: fixed Focus effect",
+        "Texts and Stickers: improved stability and usability",
+        "Fixed multiple issues leading to crashes"
+    ],
+    
+        "size": 193.1,
+        "category": {
+            "name": "Photo & Video",
+            "url": "https://itunes.apple.com/ru/genre/id6008?l=en"
+        },
+        "compatability": "Requires iOS 12.0 or later. Compatible with iPhone, iPad, and iPod touch.",
+        "languages": ["English", "Russian"],
+        "ageRating": 4,
+        "price": "Free",
+        "inAppPurchase": [
+            {
+                "name": "Hypee Annual Subscription",
+                "description": "Activate all features of Hypee",
+                "price": {
+                    "value": 1990,
+                    "currency": "RUB"
+                }
+            },
+            {
+                "name": "Hypee Weekly Subscription",
+                "price": {
+                    "value": 229,
+                    "currency": "RUB"
+                }
+            },
+            {
+                "name": "Hypee Monthly Subscription",
+                "price": {
+                    "value": 649,
+                    "currency": "RUB"
+                }
+            },
+            {
+                "name": "Hypee Weekly Subscription",
+                "price": {
+                    "value": 229,
+                    "currency": "RUB"
+                }
+            },
+            {
+                "name": "Hypee Annual Subscription",
+                "price": {
+                    "value": 1990,
+                    "currency": "RUB"
+                }
+            },
+            {
+                "name": "Hypee One-Time Purchase",
+                "price": {
+                    "value": 6490,
+                    "currency": "RUB"
+                }
+            },            {
+                "name": "Hypee Special Offer",
+                "price": {
+                    "value": 999,
+                    "currency": "RUB"
+                }
+            }
+        ]
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+<body>
+    <script type="module" src="js/index.js"></script>
+    <section class="flex flex-start align-center app-intro">
+        <div class="app-logo-div">
+            <img id="app-logo" >
+        </div>
+        <div class="column align-start heading-column">
+            <h1></h1>
+            <h3 id="legend" class="color-secondary"></h3>
+            <div class="flex flex-start align-center">
+                <button class="cta-button primary">Get</button>
+                <span class="font-smallest color-secondary flex-1">In-App Purchase</span>
+                <div class="icon-medium" id="icon-share"> </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex center app-detail-row">
+        <div class="column center align-center app-detail-badge">
+            <p>AGE</p>
+            <p class="font-large" id="age-rating"></p>
+            <p>Years Old</p>
+        </div>
+        <div class="column center align-center app-detail-badge">
+            <p>CATEGORY</p>
+            <div class="icon-large">
+
+            </div>
+            <div id="icon"></div>
+            
+           
+            <p id="category"></p>
+        </div>
+        <div class="column center align-center app-detail-badge">
+            <p>DEVELOPER</p>
+            <div id="icon"></div>
+            <div class="icon-large">
+                
+            </div>
+            <p id="developer"></p>
+            
+        </div>
+    </section>
+    <section class="feature-images-row">
+        <div class="feature-images-slider">
+            <img class="feature-image">
+            <img class="feature-image">
+            <img class="feature-image">
+            <img class="feature-image">
+            <img class="feature-image">
+            <img class="feature-image">
+        </div>
+    </section>
+    <section class="app-description-div" id="app-description-div">
+        <div class="description-div">
+            <p id="description"></p>
+            <a class="load-more" id="btn-load-more">more</a>
+            <ul id="features-list"></ul>
+            <p id="description-cta"></p>
+        </div>
+
+     <div class="app-developer-tab flex space-between align-center" id="app-developer-tab">
+        <div class="column flex-start align-start">
+            <p id="developer"></p>
+            <span class="color-secondary">Developer</span>
+        </div>
+        <div class="icon-small"></div>
+     </div>
+    </section>  
+    <section class="app-rating-reviews" id="app-rating-reviews">
+        <h2>Ratings & Reviews</h2>
+        <p class="color-secondary">This app hasn't recevied enough ratings or reviews to display a summary</p>
+    </section>
+    <section class="app-version-news" id="app-version-news">
+        <div class="flex space-between align-center"><h2>What's New</h2><a class="color-blue">Version History</a></div>
+        <div class="flex space-between align-center color-secondary mb-s">
+            <p id="version"></p>
+            <p id="last-update"></p>
+        </div>
+        <ul id="list-new-features">
+        </ul>
+    </section>
+    <section class="app-subscribpions" id="app-subscribpions">
+        <h2>Subscriptions</h2>
+        <div class="flex align-center">
+            <img id="subscription-icon" height="100" width="100">
+            <div class="column flex-start align-start">
+                <h4 id="subscription-feature"></h4>
+                <p id="subscription-feature-description" class="font-smaller color-secondary"></p>
+                <div class="flex flex-start align-center">
+                    <button class="cta-button secondary">Free Trial</button>
+                    <span class="font-smallest">See Details</span>
+                </div>
+            </div>    
+        </div> 
+    </section>
+    <section id="app-privacy">
+        <div class="flex space-between">
+            <h2>App Privacy</h2>
+            <a id="link-privacy-details" class="color-blue">See Details</a>
+        </div>
+        <p>The developer, <span id="developer"></span>, indicated that the app's privacy practices may include handling of data as described below. For more information, see the <a class="color-blue">developer's privacy policy</a></p>
+        <div class="column privacy-card-row" >
+        <div class="column align-center space-between card-style">
+            <div class="icon-large">
+                <img width="45px" height="45px">
+
+            </div>
+            <h3 class="font-bold">Data Used to Track You</h3>
+            <p>The following data may be used to track you across apps and websites owned by other companies</p>
+            <div class="flex align-center">
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+
+                    </div>
+                    <p>Identifiers</p>
+                </div>
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+
+                    </div>
+                    <p>Usage Data</p>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="column align-center center card-style">
+            <div class="icon-large">
+                <img width="45px" height="45px">
+            </div>
+            <h3 class="font-bold">Data Not Linked to You</h3>
+            <p>The following data may be collected but it is not linked to your identity:</p>
+            <div class="flex">
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+    
+                    </div>
+                    <p>Identifiers</p>
+                </div>
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+    
+                    </div>
+                    <p>Usage Data</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+        
+                    </div>
+                    <p>Diagnostics</p>
+                </div>
+                <div class="flex align-center">
+                    <div class="icon-small mr-m">
+        
+                    </div>
+                    <p>Other Data</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <p class="color-secondary">Privacy practices may vary based, for example, on the features you use or your age. <a class="color-blue">Learn More</a></p>
+
+        </div>
+    </section>
+    <section class="column align-start" id="section-information">
+        <h2>Information</h2>
+        <div class="flex space-between info-row">
+            <p class="color-secondary">Provider</p>
+            <p id="developer"></p>
+        </div>
+        <div class="flex space-between info-row">
+            <p class="color-secondary">Size</p>
+            <p class="color-secondary" id="app-size"></p>
+        </div>
+        <div class="flex space-between info-row">
+            <p class="color-secondary">Category</p>
+            <p class="color-secondary" id="category"></p>
+        </div>
+        <div class="flex space-between info-row">
+            <p class="color-secondary">Languages</p>
+            <p class="color-secondary" id="langages"></p>
+        </div>
+        <div class="flex space-between info-row align-center">
+            <p class="color-secondary flex-1">Age Rating</p>
+            <p class="color-secondary mr-s" id="age-rating"></p>
+            <div class="icon-small" id="btn-age-rating-details"></div>
+        </div>
+        <div class="column align-start info-row">
+            <div class="flex space-between  align-center">
+                <p class="color-secondary flex-1">In-App Purchases</p>
+                <p class="color-secondary mr-s hide-on-click">Yes</p>
+                <div class="icon-small hide-on-click" id="btn-inapp-purchases-details"></div>
+            </div>
+            <ul id="in-app-purchase-list">
+                
+            </ul>
+        </div>
+
+        <div class="column align-start" id="subscription-list"></div>
+        <div class="flex space-between info-row color-blue">
+            <p>Developer Website</p>
+            <div class="icon-small"></div>
+        </div>
+        <div class="flex space-between info-row color-blue">
+            <p>Privacy Policy</p>
+            <div class="icon-small"></div>
+        </div>
+        <div class="flex space-between info-row color-blue">
+            <p>Licence Agreement</p>
+            <div class="icon-small"></div>
+        </div>
+    </section>
+</body>
+</html>
