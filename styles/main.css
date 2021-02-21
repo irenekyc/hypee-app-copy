@@ -16,7 +16,7 @@ body{
     background: white;
     font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: var(--color-dark);
-    font-size:12px;
+    font-size:14px;
     line-height: 1.5;
     width:100vw;
     min-height:100vh;
