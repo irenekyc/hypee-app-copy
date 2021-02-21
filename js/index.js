@@ -28,7 +28,7 @@ fetch('data.json').then(response=> response.json()).then(data=>{
     data.newFeatures.forEach(newFeature=> document.getElementById('list-new-features').insertAdjacentHTML('beforeend', `<li>${newFeature}</li>`));
     document.getElementById('subscription-feature').innerText = data.inAppPurchase[0].name;
     document.getElementById('subscription-feature-description').innerText = data.inAppPurchase[0].description;
-    document.getElementById('app-size').innerText = `${data.size} MB`;
+    document.querySelectorAll('#app-size').forEach(size=> size.innerText = data.size);
     document.getElementById('langages').innerText = data.languages.join(", ");
     data.inAppPurchase.forEach(purchase => document.getElementById('in-app-purchase-list').insertAdjacentHTML('beforeend', `<li class="flex space-between"><span class="flex-1">${purchase.name}</span><span>${purchase.price.currency} ${purchase.price.value}</span> </li>`));
 

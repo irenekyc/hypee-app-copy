@@ -27,11 +27,15 @@
         <div class="column align-start heading-column">
             <h1></h1>
             <p id="legend" class="subtitle color-light"></p>
-            <div class="flex flex-start align-center">
+            <div class="flex flex-start align-center width-200" >
                 <a id="app-url" target="_blank">
                     <button class="cta-button primary" >Get</button>
                 </a>
-                <span class="font-smallest color-secondary flex-1">In-App Purchase</span>
+                
+                    <span class="font-smallest color-secondary">In-App Purchase</span>
+                    <div class="flex-1"></div>
+
+                
                 <div class="icon-medium color-blue" id="icon-share">
                     <svg class="icon-share" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" class="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
                     <!-- <img class="icon-share" src="https://developer.apple.com/design/human-interface-guidelines/ios/images/icons/navigation_bar_toobar_icons/Navigation_Action_2x.png"> -->
@@ -39,29 +43,41 @@
             </div>
         </div>
     </section>
-    <section class="flex center app-detail-row">
-        <div class="column center align-center app-detail-badge">
-            <p>AGE</p>
-            <p class="font-large" id="age-rating"></p>
-            <p class="font-smaller">Years Old</p>
-        </div>
-        <div class="column center align-center app-detail-badge">
-            <p>CATEGORY</p>
-            <div class="icon-large">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" class="svg-inline--fa fa-camera fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path></svg>
-                 <!-- 􀌟 -->
+    <section class="app-detail-row ">
+        <div class="flex flex-start horizontal-scroll">
+            <div class="column center align-center app-detail-badge">
+                <p>AGE</p>
+                <p class="font-large" id="age-rating"></p>
+                <p class="font-smaller">Years Old</p>
             </div>
-            <p id="category" class="font-smaller"></p>
-        </div>
-        <div class="column center align-center app-detail-badge">
-            <p>DEVELOPER</p>
-            <div class="icon-large">
-                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="address-card" class="svg-inline--fa fa-address-card fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 400H48V80h480v352zM208 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zM360 320h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z"></path></svg>
-                <!-- 􀉹 -->
+            <div class="column center align-center app-detail-badge">
+                <p>CATEGORY</p>
+                <div class="icon-large">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" class="svg-inline--fa fa-camera fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path></svg>
+                     <!-- 􀌟 -->
+                </div>
+                <p id="category" class="font-smaller"></p>
             </div>
-            <p id="developer" class="font-smaller white-space-no-wrap"></p>
-            
+            <div class="column center align-center app-detail-badge">
+                <p>DEVELOPER</p>
+                <div class="icon-large">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="address-card" class="svg-inline--fa fa-address-card fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 400H48V80h480v352zM208 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zM360 320h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z"></path></svg>
+                    <!-- 􀉹 -->
+                </div>
+                <p id="developer" class="font-smaller white-space-no-wrap"></p>
+            </div>
+            <div class="column center align-center app-detail-badge">
+                <p>LANGUAGE</p>
+                <p class="font-large">EN</p>
+                <p class="font-smaller white-space-no-wrap">+1 More</p>
+            </div>
+            <div class="column center align-center app-detail-badge">
+                <p>Size</p>
+                <p class="font-large" id="app-size"></p>
+                <p class="font-smaller white-space-no-wrap">MB</p>
+            </div>
         </div>
+       
     </section>
     <section class="feature-images-row">
         <div class="feature-images-slider" id="image-slider">
@@ -253,7 +269,7 @@
         </div>
         <div class="flex space-between info-row">
             <p class="color-secondary">Size</p>
-            <p class="color-secondary" id="app-size"></p>
+            <p class="color-secondary"><span id="app-size"></span><span> MB</span></p>
         </div>
         <div class="flex space-between info-row">
             <p class="color-secondary">Category</p>
