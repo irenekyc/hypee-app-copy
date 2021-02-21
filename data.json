@@ -1,6 +1,6 @@
 {
     "appName": "Hypee－photo, video transition‪s",
-    "appLogo": "",
+    "appUrl":"https://apps.apple.com/us/app/id1506026858",
     "legend": "Edit keyframes, add music",
     "developer":{
         "name": "Aleksei Balchunas",
@@ -16,38 +16,36 @@
     "featureMedia":[
         {
             "description":"",
-            "src": ""
+            "src_png": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/b9/c1/be/b9c1be6c-ed64-0163-aeda-ba33e9d29712/c6e9321f-be54-400d-aba0-6ead69902baf_Screenshot_99.png/314x0w.png",
+            "src_webp":"https://is1-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/b9/c1/be/b9c1be6c-ed64-0163-aeda-ba33e9d29712/c6e9321f-be54-400d-aba0-6ead69902baf_Screenshot_99.png/314x0w.webp"
         },
         {
             "description":"",
-            "src": ""
+            "src_png": "https://is5-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/6c/a6/94/6ca694a9-6ce8-647e-1d4b-6aabe534ce99/976fab13-480a-4791-a915-554b661361c2_Screenshot_100.png/314x0w.png",
+            "src_webp":"https://is5-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/6c/a6/94/6ca694a9-6ce8-647e-1d4b-6aabe534ce99/976fab13-480a-4791-a915-554b661361c2_Screenshot_100.png/314x0w.webp"
         },
         {
             "description":"",
-            "src": ""
+            "src_png": " https://is2-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/d5/b4/32/d5b432ef-86fd-54ac-74f6-b8d0133ddc18/a1bd7ebb-eddd-4bf1-9b14-09cf90c64a32_Screenshot_101.png/314x0w.png",
+            "src_webp":" https://is2-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/d5/b4/32/d5b432ef-86fd-54ac-74f6-b8d0133ddc18/a1bd7ebb-eddd-4bf1-9b14-09cf90c64a32_Screenshot_101.png/314x0w.webp"
         },
         {
             "description":"",
-            "src": ""
+            "src_png": "https://is3-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/bc/f2/0e/bcf20e39-95c6-58dd-6f71-6e5b462c49ed/e7c90d41-9271-4896-862c-ffaf06a4a3d2_Screenshot_102.png/314x0w.png",
+            "src_webp":"https://is3-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/bc/f2/0e/bcf20e39-95c6-58dd-6f71-6e5b462c49ed/e7c90d41-9271-4896-862c-ffaf06a4a3d2_Screenshot_102.png/314x0w.webp"
+        },
+        {
+            "description":"",
+            "src_png": "https://is2-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/31/8a/ca/318aca2c-94e8-3743-f1e2-abefae1c4c90/5ed0ca50-9ee8-41e1-a7b4-eb54f37cdb55_Screenshot_103.png/314x0w.png",
+            "src_webp":"https://is2-ssl.mzstatic.com/image/thumb/PurpleSource124/v4/31/8a/ca/318aca2c-94e8-3743-f1e2-abefae1c4c90/5ed0ca50-9ee8-41e1-a7b4-eb54f37cdb55_Screenshot_103.png/314x0w.webp"
+        },
+        {
+            "description":"",
+            "src_png": "https://is5-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/61/c6/41/61c64192-3d98-e388-0176-dc4baef66f2c/20ee18f4-891c-44e3-a078-81ef704e919f_Screenshot_104.png/314x0w.png",
+            "src_webp":"https://is5-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/61/c6/41/61c64192-3d98-e388-0176-dc4baef66f2c/20ee18f4-891c-44e3-a078-81ef704e919f_Screenshot_104.png/314x0w.webp"
         }
 
     ],
-    "description":{
-        "excerpt":"Try out the best video editor app with countless possibilities and amazing features like 50+ stunning filters and 120+ stickers, as well as adding music or text to videos and special sound effects! Combine all these and a number of other features and make creative and beautiful videos. \nWhen you take a look at features that Hypee is offering, it will certainly motivate you to edit your videos and make the best out of them!",
-        "features":[
-            "Transitions - 40+ transitions - Variety of shapes and looks for every occasion.",
-            "Visual Effects - 26 VFXs: Glow, Blur, Glitch, VHS, and many more.",
-            "Filters - 50+ stunning filters for your videos.",
-            "Overlays - 30+ overlays (animation or footage). A simple way to start the design of any video!",
-            "Stickers. 120+ stickers: 70+ regular and 50+ neon stickers",
-            "Sound Effects - 200+ sound effects - Make your videos alive!",
-            "Music - Import music from your library or use sound from any other video.",
-            "Re-effect feature - Offers an ability to apply effects AND change the strength of it while the video is playing. This makes it easy to make effects correspond to the beat of the music of the video.",
-            "Sharing - Ability to select and share all edits from any part of your video." ,
-            "Keyframes - Ability to edit keyframes for stickers, texts, and video itself. Mixing with all the effects, it is the perfect toolchain for creating custom effects, transitions, and reusable combinations of any part of Hypee."
-        ],
-        "cta":"If you are planning to create videos of your family and friends, we will help you to produce HQ videos - the same as you imagined it in your head! It has never been easier to create stunning videos - Take your first step!"
-    },
     "newFeatures":[
         "Effects: fixed Focus effect",
         "Texts and Stickers: improved stability and usability",

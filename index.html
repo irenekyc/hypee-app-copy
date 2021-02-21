@@ -4,22 +4,38 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hypee－photo, video transition‪s</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 <body>
     <script type="module" src="js/index.js"></script>
+    <div class="modal-box" id="modal-box-content">
+        <p id="share-content">
+            App link copied
+        </p>
+
+    </div>
+
+    </section>
     <section class="flex flex-start align-center app-intro">
         <div class="app-logo-div">
-            <img id="app-logo" >
+            <picture>
+                <source height="130" width="130"src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/48/d6/cb/48d6cb24-b68d-c308-55ba-d144ac945372/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.webp" loading="lazy">
+                <img height="130" width="130"src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/48/d6/cb/48d6cb24-b68d-c308-55ba-d144ac945372/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.png" loading="lazy" type="image/png">
+            </picture>
         </div>
         <div class="column align-start heading-column">
             <h1></h1>
-            <h3 id="legend" class="color-secondary"></h3>
+            <p id="legend" class="subtitle color-light"></p>
             <div class="flex flex-start align-center">
-                <button class="cta-button primary">Get</button>
+                <a id="app-url" target="_blank">
+                    <button class="cta-button primary" >Get</button>
+                </a>
                 <span class="font-smallest color-secondary flex-1">In-App Purchase</span>
-                <div class="icon-medium" id="icon-share"> </div>
+                <div class="icon-medium color-blue" id="icon-share">
+                    <svg class="icon-share" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" class="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
+                    <!-- <img class="icon-share" src="https://developer.apple.com/design/human-interface-guidelines/ios/images/icons/navigation_bar_toobar_icons/Navigation_Action_2x.png"> -->
+                 </div>
             </div>
         </div>
     </section>
@@ -32,48 +48,99 @@
         <div class="column center align-center app-detail-badge">
             <p>CATEGORY</p>
             <div class="icon-large">
-
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" class="svg-inline--fa fa-camera fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path></svg>
+                 <!-- 􀌟 -->
             </div>
-            <div id="icon"></div>
-            
-           
             <p id="category"></p>
         </div>
         <div class="column center align-center app-detail-badge">
             <p>DEVELOPER</p>
-            <div id="icon"></div>
             <div class="icon-large">
-                
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="address-card" class="svg-inline--fa fa-address-card fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 400H48V80h480v352zM208 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zM360 320h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z"></path></svg>
+                <!-- 􀉹 -->
             </div>
             <p id="developer"></p>
             
         </div>
     </section>
     <section class="feature-images-row">
-        <div class="feature-images-slider">
-            <img class="feature-image">
-            <img class="feature-image">
-            <img class="feature-image">
-            <img class="feature-image">
-            <img class="feature-image">
-            <img class="feature-image">
+        <div class="feature-images-slider" id="image-slider">
+
         </div>
     </section>
     <section class="app-description-div" id="app-description-div">
         <div class="description-div">
-            <p id="description"></p>
+            <div id="description">
+                <p>EASY yet OUTSTANDING video and photo editing app for IPhone. Edit your project with Hypee, create the most powerful images and reels. New effects and presets every week!</p>
+                <p>
+                Hypee is an extremely handy app, you can use it, wherever you want: at public transport, or at home covered in a blanket. You don’t even need a pc or a laptop with you in order to create professional and aesthetically pleasing videos! Just let your inspiration take a lead!</p>
+                <p>Hypee is perfect for a wide range of social media platforms: TikTok, Instagram, Facebook, and many other.</p>
+                <br />
+                <p> Using Hypee editor you can take advantage of our following features:</p>
+                <br/>
+                <p>Filters and Presets:</p>
+                <ul>
+                    <li>⁃ Over 50 different filters that will make your photos and videos shine!</li>
+                    <li>⁃ Over 30 stunning presets to apply to your videos and photos.</li>
+                </ul>
+        
+                <p>Transitions, Overlays, and Visual Effects:</p>
+                <ul>
+                    <li> ⁃ More than 50 transitions: Swipe, Blur, Fade in Out, Glitch, Slide, etc.</li>    
+                    <li> ⁃ Over 30 overlays.</li>  
+                    <li> ⁃ 30 gorgeous visual effects: Glow, Blur, Glitch, VHS, Vintage, and many others!</li>
+                </ul>
+                
+                <p>Texts and Stickers:</p>
+                <ul>
+                    <li>⁃ More than 120 trending stickers</li>
+                    <li>⁃ Over 100 customized scripts and text designs.</li>
+                </ul>
+
+                <p>Music and Sound Effects:</p>
+                <ul>
+                    <li>⁃ All trending music is right there!</li>
+                    
+                    <li>⁃ Import songs from your library</li>
+                    
+                    <li>⁃ Import music from any other video</li>
+                    
+                    <li>⁃ Over 200 sound effects - make your video alive!</li>
+                </ul>
+
+                <p>Format:</p>
+                <ul>
+                    <li>⁃ Create a suitable format for your project!</li>
+                    
+                    <li>⁃ 5 formats available: 16:9, 4:3, 9:16, 1:1, 3:4</li>
+                </ul>
+                <p>Keyframes:</p>
+                <ul>
+                    <li>⁃ Edit the keyframes for stickers, texts, and video itself.</li>
+                
+                    <li>⁃ Create customized effects, transitions</li>
+                </ul>
+                <p>Share:</p>
+                <ul>
+                    <li>⁃ Share your photos and videos with the world via TikTok, Likee, Instagram, Facebook, Snapchat.</li>
+                </ul>
+                <br/>
+                <p>Hypee is a motivator itself! If you don’t know where to start, or you want to try different styles: just go ahead and play around with Hypee! Just pick up few filters and try out different presets to get inspired to create more!"</p>
+                </div>
             <a class="load-more" id="btn-load-more">more</a>
-            <ul id="features-list"></ul>
-            <p id="description-cta"></p>
         </div>
 
-     <div class="app-developer-tab flex space-between align-center" id="app-developer-tab">
+     <a id="developer-profile-link" target="_blank"><div class="app-developer-tab flex space-between align-center" id="app-developer-tab">
         <div class="column flex-start align-start">
             <p id="developer"></p>
             <span class="color-secondary">Developer</span>
         </div>
-        <div class="icon-small"></div>
+        <div class="icon-small">
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            <!-- 􀆊 -->
+        </div>
      </div>
+    </a>
     </section>  
     <section class="app-rating-reviews" id="app-rating-reviews">
         <h2>Ratings & Reviews</h2>
@@ -91,9 +158,13 @@
     <section class="app-subscribpions" id="app-subscribpions">
         <h2>Subscriptions</h2>
         <div class="flex align-center">
-            <img id="subscription-icon" height="100" width="100">
+            <picture>
+                <source height="100" width="100" src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/eb/bc/bc/ebbcbc26-4b33-01ee-39c1-1d7ceec99e51/pr_source.png/292x0w.webp" type="image/webp">
+                <img id="subscription-icon" height="100" width="100" src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/eb/bc/bc/ebbcbc26-4b33-01ee-39c1-1d7ceec99e51/pr_source.png/292x0w.png" loading="lazy">
+            </picture>
+
             <div class="column flex-start align-start">
-                <h4 id="subscription-feature"></h4>
+                <h3 id="subscription-feature"></h3>
                 <p id="subscription-feature-description" class="font-smaller color-secondary"></p>
                 <div class="flex flex-start align-center">
                     <button class="cta-button secondary">Free Trial</button>
@@ -105,13 +176,13 @@
     <section id="app-privacy">
         <div class="flex space-between">
             <h2>App Privacy</h2>
-            <a id="link-privacy-details" class="color-blue">See Details</a>
+            <a href="https://cdn.hypee.app/legal/privacy.pdf" target="_blank" id="link-privacy-details" class="color-blue">See Details</a>
         </div>
-        <p>The developer, <span id="developer"></span>, indicated that the app's privacy practices may include handling of data as described below. For more information, see the <a class="color-blue">developer's privacy policy</a></p>
+        <p>The developer, <span id="developer"></span>, indicated that the app's privacy practices may include handling of data as described below. For more information, see the <a class="color-blue" href="https://cdn.hypee.app/legal/privacy.pdf" target="_blank">developer's privacy policy</a></p>
         <div class="column privacy-card-row" >
         <div class="column align-center space-between card-style">
-            <div class="icon-large">
-                <img width="45px" height="45px">
+            <div class="icon-large icon-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M58.595 42c1.544 0 2.405.866 2.405 2.45v7.29c0 6.153-3.087 9.26-9.322 9.26h-7.244C42.861 61 42 60.134 42 58.61c0-1.554.86-2.42 2.434-2.42h7.185c2.91 0 4.6-1.582 4.6-4.69v-7.05c0-1.584.833-2.45 2.376-2.45zm-53.22 0c1.543 0 2.404.866 2.404 2.45v7.05c0 3.108 1.633 4.69 4.601 4.69h7.186c1.573 0 2.434.866 2.434 2.42 0 1.524-.86 2.39-2.434 2.39h-7.244C6.117 61 3 57.922 3 51.74v-7.29C3 42.866 3.83 42 5.375 42zM32 34C42.897 34 48 42.988 48 46.399c0 .949-.48 1.601-1.501 1.601H17.501C16.481 48 16 47.348 16 46.399 16 42.988 21.103 34 32 34zM32 14c4.438 0 8 3.82 8 8.412 0 4.916-3.562 8.618-8 8.588-4.437-.029-8-3.672-8-8.588C24 17.82 27.563 14 32 14zM51.678 3C57.913 3 61 6.076 61 12.231v7.32C61 21.103 60.168 22 58.595 22c-1.514 0-2.375-.896-2.375-2.45V12.5c0-3.108-1.692-4.691-4.601-4.691h-7.185c-1.573 0-2.434-.866-2.434-2.42C42 3.837 42.86 3 44.434 3h7.244zM19.566 3C21.139 3 22 3.836 22 5.39c0 1.553-.86 2.419-2.434 2.419H12.38c-2.968 0-4.601 1.583-4.601 4.69v7.051c0 1.554-.83 2.45-2.404 2.45C3.86 22 3 21.104 3 19.55v-7.319C3 6.076 6.117 3 12.322 3h7.244z"/></svg>
 
             </div>
             <h3 class="font-bold">Data Used to Track You</h3>
@@ -119,13 +190,13 @@
             <div class="flex align-center">
                 <div class="flex align-center">
                     <div class="icon-small mr-m">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M53.277 9C58.442 9 61 11.599 61 16.746v30.508C61 52.4 58.442 55 53.277 55H10.723C5.583 55 3 52.426 3 47.254V16.746C3 11.574 5.583 9 10.723 9h42.554zM21.493 34C15.028 34 11 38.765 11 42.224 11 43.4 11.7 44 13.66 44h15.667C31.305 44 32 43.399 32 42.224 32 38.764 27.972 34 21.493 34zm29.965 6H37.517c-.851 0-1.517.653-1.517 1.483 0 .846.666 1.517 1.517 1.517h13.94c.855 0 1.543-.67 1.543-1.517 0-.83-.688-1.483-1.542-1.483zm0-9H37.517c-.851 0-1.517.67-1.517 1.521 0 .83.666 1.479 1.517 1.479h13.94c.855 0 1.543-.65 1.543-1.479 0-.85-.688-1.521-1.542-1.521zM21.006 20c-2.68 0-5.019 2.359-5.006 5.452C16 28.579 18.314 31 21.006 31 23.686 31 26 28.58 26 25.425 26 22.31 23.673 20 21.006 20zm30.452 1H37.517c-.851 0-1.517.675-1.517 1.51 0 .831.666 1.49 1.517 1.49h13.94c.855 0 1.543-.659 1.543-1.49 0-.835-.688-1.51-1.542-1.51z"/></svg>
                     </div>
                     <p>Identifiers</p>
                 </div>
                 <div class="flex align-center">
                     <div class="icon-small mr-m">
-
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"/></svg>
                     </div>
                     <p>Usage Data</p>
                 </div>
@@ -134,35 +205,35 @@
 
         </div>
         <div class="column align-center center card-style">
-            <div class="icon-large">
-                <img width="45px" height="45px">
+            <div class="icon-large icon-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M7.36 17l3.208 3.208A24.23 24.23 0 007.39 32.235c0 13.44 10.93 24.374 24.366 24.374 4.374 0 8.483-1.159 12.035-3.186L47 56.631A28.616 28.616 0 0131.756 61C15.874 61 3 48.122 3 32.235A28.637 28.637 0 017.36 17zM9.77 6.642l47.588 47.606a2.204 2.204 0 010 3.11 2.206 2.206 0 01-3.111 0L6.632 9.753c-.829-.8-.856-2.283 0-3.11.826-.828 2.253-.886 3.138 0zM32.238 3C48.123 3 61 15.878 61 31.761c0 5.597-1.599 10.82-4.364 15.239l-3.208-3.209a24.221 24.221 0 003.182-12.03c0-13.437-10.934-24.37-24.372-24.37a24.223 24.223 0 00-12.03 3.18L17 7.363A28.628 28.628 0 0132.238 3zm-7.492 31L36 45H18.373C17.44 45 17 44.418 17 43.572c0-2.224 2.5-7.11 7.746-9.572zm6.915-20C35.733 14 39 17.634 39 22.002c0 2.419-.874 4.529-2.281 5.998L26 16.923C27.343 15.145 29.376 14 31.661 14z"/></svg>
             </div>
             <h3 class="font-bold">Data Not Linked to You</h3>
             <p>The following data may be collected but it is not linked to your identity:</p>
             <div class="flex">
                 <div class="flex align-center">
                     <div class="icon-small mr-m">
-    
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M53.277 9C58.442 9 61 11.599 61 16.746v30.508C61 52.4 58.442 55 53.277 55H10.723C5.583 55 3 52.426 3 47.254V16.746C3 11.574 5.583 9 10.723 9h42.554zM21.493 34C15.028 34 11 38.765 11 42.224 11 43.4 11.7 44 13.66 44h15.667C31.305 44 32 43.399 32 42.224 32 38.764 27.972 34 21.493 34zm29.965 6H37.517c-.851 0-1.517.653-1.517 1.483 0 .846.666 1.517 1.517 1.517h13.94c.855 0 1.543-.67 1.543-1.517 0-.83-.688-1.483-1.542-1.483zm0-9H37.517c-.851 0-1.517.67-1.517 1.521 0 .83.666 1.479 1.517 1.479h13.94c.855 0 1.543-.65 1.543-1.479 0-.85-.688-1.521-1.542-1.521zM21.006 20c-2.68 0-5.019 2.359-5.006 5.452C16 28.579 18.314 31 21.006 31 23.686 31 26 28.58 26 25.425 26 22.31 23.673 20 21.006 20zm30.452 1H37.517c-.851 0-1.517.675-1.517 1.51 0 .831.666 1.49 1.517 1.49h13.94c.855 0 1.543-.659 1.543-1.49 0-.835-.688-1.51-1.542-1.51z"/></svg>
                     </div>
                     <p>Identifiers</p>
                 </div>
                 <div class="flex align-center">
-                    <div class="icon-small mr-m">
-    
+                    <div class="icon-small mr-m ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M49.925 53.844h7.098c3.287 0 4.978-1.572 4.978-4.692V14.52c0-3.12-1.69-4.717-4.978-4.717h-7.098c-3.239 0-4.93 1.596-4.93 4.717v34.632c0 3.12 1.691 4.692 4.93 4.692zm-21.412 0h7.097c3.287 0 4.955-1.572 4.955-4.692V21.475c0-3.12-1.668-4.717-4.955-4.717h-7.097c-3.264 0-4.955 1.596-4.955 4.717v27.677c0 3.12 1.691 4.692 4.955 4.692zm-21.413 0h7.074c3.287 0 4.978-1.572 4.978-4.692V28.406c0-3.12-1.691-4.716-4.978-4.716H7.1c-3.264 0-4.955 1.596-4.955 4.716v20.746c0 3.12 1.691 4.692 4.955 4.692z"/></svg>
                     </div>
                     <p>Usage Data</p>
                 </div>
             </div>
             <div class="flex">
                 <div class="flex align-center">
-                    <div class="icon-small mr-m">
-        
+                    <div class="icon-small mr-m ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M29.47 61.996h5.234c1.48 0 2.56-.882 2.873-2.332l1.48-6.258c1.109-.37 2.19-.797 3.128-1.252l5.49 3.357c1.223.768 2.617.654 3.64-.37l3.67-3.64c1.024-1.025 1.166-2.504.341-3.727l-3.356-5.433c.483-.995.91-2.02 1.223-3.043l6.314-1.508c1.45-.313 2.304-1.393 2.304-2.872v-5.149c0-1.45-.853-2.531-2.304-2.844l-6.257-1.508c-.37-1.166-.825-2.218-1.223-3.1l3.356-5.518c.796-1.223.711-2.617-.341-3.64l-3.727-3.67c-1.052-.967-2.303-1.138-3.555-.427l-5.575 3.442c-.91-.483-1.962-.91-3.129-1.28l-1.479-6.343c-.313-1.45-1.393-2.332-2.873-2.332h-5.233c-1.48 0-2.56.882-2.901 2.332l-1.48 6.286c-1.109.37-2.19.797-3.157 1.309l-5.518-3.414c-1.251-.71-2.531-.568-3.584.427l-3.697 3.67c-1.053 1.023-1.166 2.417-.342 3.64l3.328 5.518c-.37.882-.825 1.934-1.194 3.1l-6.258 1.508c-1.45.313-2.304 1.394-2.304 2.844v5.149c0 1.479.853 2.56 2.304 2.872l6.315 1.508c.312 1.024.739 2.048 1.194 3.043L8.85 47.774c-.853 1.223-.682 2.702.342 3.726l3.64 3.641c1.024 1.024 2.446 1.138 3.67.37l5.46-3.357c.968.455 2.02.882 3.13 1.252l1.479 6.258c.34 1.45 1.422 2.332 2.9 2.332zm2.618-19.683c-5.518 0-10.04-4.551-10.04-10.07 0-5.489 4.522-10.011 10.04-10.011 5.518 0 10.04 4.522 10.04 10.012 0 5.518-4.522 10.069-10.04 10.069z"/></svg>
                     </div>
                     <p>Diagnostics</p>
                 </div>
                 <div class="flex align-center">
-                    <div class="icon-small mr-m">
-        
+                    <div class="icon-small mr-m ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true"><path d="M32.09 61.568c16.185 0 29.586-13.43 29.586-29.587 0-16.186-13.43-29.587-29.616-29.587-16.157 0-29.558 13.4-29.558 29.587 0 16.156 13.43 29.587 29.587 29.587zM18.078 36.332c-2.379 0-4.351-1.944-4.351-4.38 0-2.408 1.972-4.351 4.35-4.351 2.408 0 4.381 1.943 4.381 4.35a4.358 4.358 0 01-4.38 4.38zm13.981 0a4.376 4.376 0 01-4.38-4.38c0-2.408 1.973-4.351 4.38-4.351a4.345 4.345 0 014.351 4.35 4.352 4.352 0 01-4.35 4.38zm13.981 0a4.358 4.358 0 01-4.38-4.38 4.352 4.352 0 014.38-4.351c2.38 0 4.352 1.943 4.352 4.35 0 2.437-1.973 4.38-4.352 4.38z"/></svg>
                     </div>
                     <p>Other Data</p>
                 </div>
@@ -170,7 +241,7 @@
         </div>
         
     </div>
-    <p class="color-secondary">Privacy practices may vary based, for example, on the features you use or your age. <a class="color-blue">Learn More</a></p>
+    <p class="color-secondary">Privacy practices may vary based, for example, on the features you use or your age. <a class="color-blue" href="https://apps.apple.com/story/id1538632801" target="_blank">Learn More</a></p>
 
         </div>
     </section>
@@ -186,22 +257,28 @@
         </div>
         <div class="flex space-between info-row">
             <p class="color-secondary">Category</p>
-            <p class="color-secondary" id="category"></p>
+            <a href="https://itunes.apple.com/ru/genre/id6008?l=en" target="_blank"><p class="color-secondary" id="category"></p></a>
         </div>
         <div class="flex space-between info-row">
             <p class="color-secondary">Languages</p>
             <p class="color-secondary" id="langages"></p>
         </div>
-        <div class="flex space-between info-row align-center">
-            <p class="color-secondary flex-1">Age Rating</p>
-            <p class="color-secondary mr-s" id="age-rating"></p>
-            <div class="icon-small" id="btn-age-rating-details"></div>
+        <div class="info-row" id="age-details-row">
+            <div class="flex space-between align-center width-full">
+                <p class="color-secondary flex-1">Age Rating</p>
+                <p class="color-secondary mr-s" id="age-rating"></p>
+                <div class="icon-small pointer" id="btn-age-rating-details"><svg width="12" height="12" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></div>
+            </div>
+            <div class="column flex-start align-start" id="content-age-details-open">
+                <p class="color-secondary mr-s" id="age-rating"></p>
+                <a href="https://apps.apple.com/story/id1538632801" target="_blank" class="color-blue">Learn More</a>
+            </div>
         </div>
         <div class="column align-start info-row">
             <div class="flex space-between  align-center">
                 <p class="color-secondary flex-1">In-App Purchases</p>
                 <p class="color-secondary mr-s hide-on-click">Yes</p>
-                <div class="icon-small hide-on-click" id="btn-inapp-purchases-details"></div>
+                <div class="icon-small hide-on-click" id="btn-inapp-purchases-details"><svg width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></div>
             </div>
             <ul id="in-app-purchase-list">
                 
@@ -209,18 +286,30 @@
         </div>
 
         <div class="column align-start" id="subscription-list"></div>
-        <div class="flex space-between info-row color-blue">
-            <p>Developer Website</p>
-            <div class="icon-small"></div>
-        </div>
-        <div class="flex space-between info-row color-blue">
-            <p>Privacy Policy</p>
-            <div class="icon-small"></div>
-        </div>
-        <div class="flex space-between info-row color-blue">
-            <p>Licence Agreement</p>
-            <div class="icon-small"></div>
-        </div>
+        <a class="full-width" id="developer-profile-link" target="_blank">
+            <div class="flex space-between info-row color-blue">
+                <p>Developer Website</p>
+                <div class="icon-small color-blue">
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M347.94 129.86L203.6 195.83a31.938 31.938 0 0 0-15.77 15.77l-65.97 144.34c-7.61 16.65 9.54 33.81 26.2 26.2l144.34-65.97a31.938 31.938 0 0 0 15.77-15.77l65.97-144.34c7.61-16.66-9.54-33.81-26.2-26.2zm-77.36 148.72c-12.47 12.47-32.69 12.47-45.16 0-12.47-12.47-12.47-32.69 0-45.16 12.47-12.47 32.69-12.47 45.16 0 12.47 12.47 12.47 32.69 0 45.16zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z"></path></svg>
+                </div>
+            </div>
+        </a>
+        <a class="full-width" href="https://cdn.hypee.app/legal/privacy.pdf" target="_blank">
+            <div class="flex space-between info-row color-blue">
+                <p>Privacy Policy</p>
+                <div class="icon-small color-blue">
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M408.781 128.007C386.356 127.578 368 146.36 368 168.79V256h-8V79.79c0-22.43-18.356-41.212-40.781-40.783C297.488 39.423 280 57.169 280 79v177h-8V40.79C272 18.36 253.644-.422 231.219.007 209.488.423 192 18.169 192 40v216h-8V80.79c0-22.43-18.356-41.212-40.781-40.783C121.488 40.423 104 58.169 104 80v235.992l-31.648-43.519c-12.993-17.866-38.009-21.817-55.877-8.823-17.865 12.994-21.815 38.01-8.822 55.877l125.601 172.705A48 48 0 0 0 172.073 512h197.59c22.274 0 41.622-15.324 46.724-37.006l26.508-112.66a192.011 192.011 0 0 0 5.104-43.975V168c.001-21.831-17.487-39.577-39.218-39.993z"></path></svg>
+                </div>
+            </div>
+        </a>
+        <a class="full-width" href="" target="_blank">    
+            <div class="flex space-between info-row color-blue">
+                <p>Licence Agreement</p>
+                <div class="icon-small">
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg>
+                </div>
+            </div>
+        </a>
     </section>
 </body>
 </html>
