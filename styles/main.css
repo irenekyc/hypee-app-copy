@@ -16,7 +16,7 @@ body{
     background: white;
     font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: var(--color-dark);
-    font-size:14px;
+    font-size:16px;
     line-height: 1.5;
     width:100vw;
     min-height:100vh;
@@ -49,6 +49,9 @@ section h2{
 }
 
 /* font */
+.white-space-no-wrap{
+    white-space:nowrap;
+}
 .color-secondary{
     color: var(--color-gray);
 }
@@ -86,7 +89,7 @@ h3{
 }
 
 .font-smaller{
-    font-size:0.8rem;
+    font-size:0.9rem;
 }
 
 /* layout */
@@ -197,8 +200,8 @@ h3{
 }
 
 .icon-small{
-    width:20px;
-    height:20px;
+    width:24px;
+    height:24px;
     display:grid;
     place-content: center;
 }
@@ -307,7 +310,7 @@ h3{
 .description-div{
     width:100%;
     position: relative;
-    max-height: 51px;
+    max-height: calc(1rem * 1.5 *3);
     overflow: hidden;
 }
 
@@ -327,9 +330,9 @@ h3{
     bottom: 0;
     right:0;
     padding: 0 0.5rem;
-    line-height:14px;
-    height:14px;
-    font-size:0.8rem;
+    line-height:calc(1rem * 1.5);
+    height: calc(1rem * 1.5);
+    font-size:1rem;
     cursor: pointer;
 }
 
