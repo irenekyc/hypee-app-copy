@@ -10,8 +10,6 @@
         "score": 4.6,
         "total": 56
     },
-    "version": "1.15.0",
-    "lastUpdate": "2d ago",
     "featureMedia":[
         {
             "description":"",
@@ -45,12 +43,6 @@
         }
 
     ],
-    "newFeatures":[
-        "Effects: fixed Focus effect",
-        "Texts and Stickers: improved stability and usability",
-        "Fixed multiple issues leading to crashes"
-    ],
-    
         "size": 193.1,
         "category": {
             "name": "Photo & Video",

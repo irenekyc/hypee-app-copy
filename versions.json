@@ -1,0 +1,127 @@
+[
+    {
+        "date": "Feb 17, 2021",
+        "notes": "* Fixed saving huge video files to camera roll of\n* Effects: new fisheye effect",
+        "version": "1.16.0"
+    },
+    {
+        "date": "Feb 14, 2021",
+        "notes": "* Effects: fixed Focus effect\n* Texts and Stickers: improved stability and usability\n* Fixed multiple issues leading to crashes",
+        "version": "1.15.0"
+    },
+    {
+        "date": "Feb 9, 2021",
+        "notes": "* NEW! Effects: new aesthetic \"Pink Vintage\" effect",
+        "version": "1.14.0"
+    },
+    {
+        "date": "Feb 7, 2021",
+        "notes": "* NEW! Effects: stunning blur bling static effects! \n* Performance improvements\n* Multiple stability issues fixes",
+        "version": "1.13.0"
+    },
+    {
+        "date": "Feb 4, 2021",
+        "notes": "* Keyframes: fixed timeline\n* Fixed an issue leading app to crash",
+        "version": "1.12.2"
+    },
+    {
+        "date": "Feb 2, 2021",
+        "notes": "* Fixed video preview performance issues",
+        "version": "1.12.1"
+    },
+    {
+        "date": "Feb 1, 2021",
+        "notes": "* Effects: fixed recording issues\n* Export: fixed video lagging issues",
+        "version": "1.12.0"
+    },
+    {
+        "date": "Jan 29, 2021",
+        "notes": "* Effects: new stunning \"Halo\" effects",
+        "version": "1.11.0"
+    },
+    {
+        "date": "Jan 28, 2021",
+        "notes": "* Fixed multiple stability issues",
+        "version": "1.10.1"
+    },
+    {
+        "date": "Jan 26, 2021",
+        "notes": "* Effects: we've added new \"Prism\" effects! \n* Subscription screen minor fixes.",
+        "version": "1.10.0"
+    },
+    {
+        "date": "Jan 24, 2021",
+        "notes": "* Optimised presets loading. Now they are loaded faster.",
+        "version": "1.9.1"
+    },
+    {
+        "date": "Jan 23, 2021",
+        "notes": "* Added 2 more effects: \"Colorful Frame\" and \"Rain Drops\". Both are dynamically generated and highly customisable. \n* A few minor changes on Subscription screen.",
+        "version": "1.9.0"
+    },
+    {
+        "date": "Jan 21, 2021",
+        "notes": "* Fixed multiple problems leading the app to crash",
+        "version": "1.8.1"
+    },
+    {
+        "date": "Jan 18, 2021",
+        "notes": "* NEW! Hypee supports photos editing! \n* Presets previews on the main app screen: now previews are loaded instantly. \n* Minor bug fixes leading to crashing.",
+        "version": "1.8.0"
+    },
+    {
+        "date": "Jan 12, 2021",
+        "notes": "* Subscription: fixed issue leading to missing price on the screen",
+        "version": "1.7.4"
+    },
+    {
+        "date": "Jan 12, 2021",
+        "notes": "* Minor UI fixes and improvements\n* Fixing issues leading to application crash",
+        "version": "1.7.3"
+    },
+    {
+        "date": "Jan 11, 2021",
+        "notes": "* Stickers &amp; Text: fixed an issue leading the app to freeze\n* Sounds: better music search",
+        "version": "1.7.2"
+    },
+    {
+        "date": "Jan 9, 2021",
+        "notes": "* Stickers &amp; Text: fixed an issue leading the app to freeze\n* Effects: added new stunning visual effects\n* Minor UI fixes",
+        "version": "1.7.1"
+    },
+    {
+        "date": "Jan 8, 2021",
+        "notes": "* Introducing the new main screen with presets previews\n* Rendering: fixing issue leading to lower quality when using high resolution photos",
+        "version": "1.7.0"
+    },
+    {
+        "date": "Jan 7, 2021",
+        "notes": "* Fixed minor rendering issues",
+        "version": "1.6.8"
+    },
+    {
+        "date": "Jan 7, 2021",
+        "notes": "* Presets: updated presets addition logic, now it's more straightforward and easier to interact with\n* Rendering: fixed an issue leading to application crash",
+        "version": "1.6.7"
+    },
+    {
+        "date": "Jan 5, 2021",
+        "notes": "* Effects: fixed a number of issues leading to poor image quality\n* Rendering: fixed first frame issue",
+        "version": "1.6.6"
+    },
+    {
+        "date": "Jan 5, 2021",
+        "notes": "* Deep linking stability improvements when sharing the app with friends",
+        "version": "1.6.5"
+    },
+    {
+        "date": "Jan 3, 2021",
+        "notes": "* Text: minor UI fixes",
+        "version": "1.6.4"
+    },
+    {
+        "date": "Jan 3, 2021",
+        "notes": "* Presets: ability to change the text of the applied preset\n* Stickers &amp; Text Visual Effects",
+        "version": "1.6.3"
+    }
+]

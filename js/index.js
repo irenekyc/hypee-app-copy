@@ -1,14 +1,20 @@
-const hideShareAlert=()=>{
+const closeModalBox = ()=>{
   document.getElementById('modal-box-content').style.visibility="hidden"
-  document.getElementById("share-content").style.visibility="hidden"
   document.getElementById('modal-box-content').style.opacity=0
-  document.getElementById("share-content").style.opacity=0
+}
+
+const hideShareAlert=()=>{
+  document.getElementById("share-content").style.visibility="hidden"
+  document.getElementById('share-content').style.opacity=0
+}
+
+const showModalBox = ()=>{
+  document.getElementById('modal-box-content').style.visibility="visible"
+  document.getElementById('modal-box-content').style.opacity=1
 }
 
 const showShareAlert=()=>{
-  document.getElementById('modal-box-content').style.visibility="visible"
   document.getElementById("share-content").style.visibility="visible"
-  document.getElementById('modal-box-content').style.opacity=1
   document.getElementById("share-content").style.opacity=1
 }
 fetch('data.json').then(response=> response.json()).then(data=>{
@@ -23,9 +29,7 @@ fetch('data.json').then(response=> response.json()).then(data=>{
         <source src="${media.src_webp}" type="webp" >
         <img src="${media.src_png}" loading="lazy">
     </picture>`))
-    document.getElementById('version').innerText=`Version ${data.version}`;
-    document.getElementById('last-update').innerText=data.lastUpdate;
-    data.newFeatures.forEach(newFeature=> document.getElementById('list-new-features').insertAdjacentHTML('beforeend', `<li>${newFeature}</li>`));
+
     document.getElementById('subscription-feature').innerText = data.inAppPurchase[0].name;
     document.getElementById('subscription-feature-description').innerText = data.inAppPurchase[0].description;
     document.querySelectorAll('#app-size').forEach(size=> size.innerText = data.size);
@@ -69,5 +73,30 @@ toggleAgeBtn.addEventListener('click', ()=>{
   toggleAgeBtn.style.display="none"
   document.querySelector('#age-details-row #age-rating').style.display="none"
   document.getElementById('content-age-details-open').style.display="flex"
+})
+
+
+// Versions
+fetch('versions.json').then(response=> response.json()).then(data=>{
+  document.getElementById('version').innerText=`Version ${data[0].version}`;
+  document.getElementById('list-new-features').innerText=data[0].notes
+  data.forEach(version=> document.getElementById('version-history-table').insertAdjacentHTML('beforeend', `<div class="version-row full-width">
+    <div class="flex space-between align-center">
+      <span>${version.version}</span>
+      <span class="color-light">${version.date}</span>
+    </div>
+    <p class="version-history-list">${version.notes.replaceAll("\n", "<br/>")}</p>
+  </div>`))
+})
+
+const versionHistoryBtn = document.getElementById('btn-view-version-history')
+versionHistoryBtn.addEventListener('click', ()=>{
+  showModalBox()
+  document.getElementById('version-history-content').style.visibility="visible"
+})
+
+document.getElementById('close-version-history').addEventListener('click', ()=>{
+  closeModalBox()
+  document.getElementById('version-history-table').style.visibility="hidden"
 })
 
