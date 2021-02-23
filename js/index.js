@@ -17,11 +17,14 @@ const showShareAlert=()=>{
   document.getElementById("share-content").style.visibility="visible"
   document.getElementById("share-content").style.opacity=1
 }
+
+const starSVG = '<svg aria-hidden="true" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>'
 fetch('data.json').then(response=> response.json()).then(data=>{
     document.querySelector('h1').innerText= data.appName;
     document.getElementById('legend').innerText=data.legend;
     document.querySelectorAll('#app-url').forEach(url => url.href=data.appUrl);
     document.querySelectorAll('#age-rating').forEach(item=> item.innerText=`${data.ageRating}+`);
+    document.querySelectorAll('#app-rating').forEach(rating=> rating.innerText=data.rating.score);
     document.querySelectorAll('#category').forEach(category=> category.innerText=data.category.name);
     document.querySelectorAll('#developer').forEach(developer=> developer.innerHTML=data.developer.name);
     document.querySelectorAll('#developer-profile-link').forEach(link=> link.href= data.developer.url);
@@ -99,4 +102,41 @@ document.getElementById('close-version-history').addEventListener('click', ()=>{
   closeModalBox()
   document.getElementById('version-history-table').style.visibility="hidden"
 })
+
+const renderStars = number =>{
+  let rating = 0
+  let stars = ``
+  while (rating !== number){
+    stars = stars + `<svg aria-hidden="true" class="star-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>`
+    rating++
+  }
+  console.log(stars)
+  return stars
+
+}
+const renderContent = (userReview, developerResponse)=>{
+  if(developerResponse){
+   return ` <p class="user-review-content with-developer-response">${userReview}</p>
+   <p class="font-bold">Developer Response</p>
+   <p class="developer-response">${developerResponse.body}</p>
+   </div>`
+   } else{
+     return `<p class="user-review-content no-developer-response">${userReview}</p>`
+   }
+}
+
+fetch('reviews.json').then(response=> response.json()).then(data=>{
+  data.slice(0,4).forEach(review=> document.getElementById('review-slider').insertAdjacentHTML('beforeend', `
+<div class="app-reviews-card">
+<div class="flex space-between align-center">
+    <p class="font-bold">${review.attributes.title}</p>
+    <p class="color-light">${review.attributes.date}</p>
+</div>
+<div class="flex space-between align-center">
+    <p class="user-review-rating"> 
+    ${renderStars(review.attributes.rating)}
+    </p>
+    <p class="color-light">${review.attributes.userName}</p>
+</div>
+${renderContent(review.attributes.review, review.attributes.developerResponse)}`))})
 
